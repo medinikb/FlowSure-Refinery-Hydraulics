@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "profiles": {
+    "technip-nrl": {
+      "label": "Technip / NRL project basis (D4)",
+      "source": "TP-1ZZZA-PR-BOD-0001_D4, Section 8.11 (pages 54-57)",
+      "services": {
+        "pump-suction-bubble-point": { "velocityMaxByNpsIn": [{ "maxNpsIn": 2, "valueMS": 0.6 }, { "maxNpsIn": 10, "valueMS": 0.9 }, { "maxNpsIn": 18, "valueMS": 1.2 }, { "valueMS": 1.5 }], "pressureGradientNormalKgCm2Km": 0.6, "pressureGradientMaxKgCm2Km": 0.9 },
+        "pump-suction-subcooled": { "velocityMaxByNpsIn": [{ "maxNpsIn": 2, "valueMS": 0.9 }, { "maxNpsIn": 6, "valueMS": 1.2 }, { "maxNpsIn": 18, "valueMS": 1.5 }, { "valueMS": 1.8 }], "pressureGradientNormalKgCm2Km": 2.3, "pressureGradientMaxKgCm2Km": 3.5 },
+        "pump-discharge-low-pressure": { "velocityMinMS": 1.5, "velocityMaxMS": 3.0, "pressureGradientNormalKgCm2Km": 3.5, "pressureGradientMaxKgCm2Km": 4.5 },
+        "pump-discharge-high-pressure": { "velocityMinMS": 1.5, "velocityMaxMS": 3.0, "pressureGradientNormalKgCm2Km": 7.0, "pressureGradientMaxKgCm2Km": 9.0 },
+        "gravity-flow": { "velocityNormalMS": 0.6, "pressureGradientNormalKgCm2Km": 0.25, "pressureGradientMaxKgCm2Km": 0.45 },
+        "side-stream-draw-off": { "velocityMaxByNpsIn": [{ "maxNpsIn": 2, "valueMS": 0.6 }, { "valueMS": 0.9 }], "pressureGradientNormalKgCm2Km": 0.6, "pressureGradientMaxKgCm2Km": 0.9 },
+        "thermosiphon-reboiler-liquid": { "pressureGradientNormalKgCm2Km": 0.2, "pressureGradientMaxKgCm2Km": 0.4 },
+        "cooling-water": { "velocityMinMS": 1.0, "velocityMaxMS": 2.5, "pressureGradientNormalKgCm2Km": 2.5, "pressureGradientMaxKgCm2Km": 3.5 },
+        "kerosene-jet-fuel": { "velocityMaxMS": 3.0, "staticControlVelocityMaxMS": 1.0 },
+        "hot-oil": { "velocityMinMS": 1.0 },
+        "lean-amine-carbon-steel": { "velocityMaxMS": 2.0 },
+        "rich-amine-carbon-steel": { "velocityMaxMS": 1.0 },
+        "caustic-carbon-steel": { "velocityMaxMS": 1.5 },
+        "general-liquid": { "velocityMaxMS": 3.0, "source": "FlowSure generic general-liquid screen; no explicit D4 Section 8.11 criterion is assigned." },
+        "vacuum-service": { "velocityMaxMS": 90.0, "pressureDropFractionMax": 0.04 },
+        "general-gas": { "velocityMaxMS": 50.0, "momentumMaxByPressureKgCm2G": [{ "maxPressureKgCm2G": 20, "valuePa": 6000 }, { "maxPressureKgCm2G": 50, "valuePa": 7500 }, { "maxPressureKgCm2G": 80, "valuePa": 10000 }, { "valuePa": 15000 }], "largeLineVelocityMaxByPressureKgCm2G": [{ "maxPressureKgCm2G": 0.1, "valueMS": 60 }, { "maxPressureKgCm2G": 1, "valueMS": 40 }, { "maxPressureKgCm2G": 2.5, "valueMS": 30 }, { "maxPressureKgCm2G": 10, "valueMS": 15 }, { "maxPressureKgCm2G": 20, "valueMS": 10 }, { "maxPressureKgCm2G": 40, "valueMS": 7 }] },
+        "compressor-suction": { "velocityMaxMS": 50.0, "pressureGradientNormalKgCm2Km": 0.2, "pressureGradientMaxKgCm2Km": 0.7 },
+        "compressor-discharge-individual": { "velocityMaxMS": 50.0, "pressureGradientNormalKgCm2Km": 0.4, "pressureGradientMaxKgCm2Km": 1.0 },
+        "compressor-discharge-header": { "velocityMaxMS": 50.0, "pressureGradientNormalKgCm2Km": 0.4, "pressureGradientMaxKgCm2Km": 1.0 },
+        "fuel-gas-header": { "velocityMaxMS": 50.0, "momentumMaxByPressureKgCm2G": [{ "maxPressureKgCm2G": 20, "valuePa": 6000 }, { "maxPressureKgCm2G": 50, "valuePa": 7500 }, { "maxPressureKgCm2G": 80, "valuePa": 10000 }, { "valuePa": 15000 }], "largeLineVelocityMaxByPressureKgCm2G": [{ "maxPressureKgCm2G": 0.1, "valueMS": 60 }, { "maxPressureKgCm2G": 1, "valueMS": 40 }, { "maxPressureKgCm2G": 2.5, "valueMS": 30 }, { "maxPressureKgCm2G": 10, "valueMS": 15 }, { "maxPressureKgCm2G": 20, "valueMS": 10 }, { "maxPressureKgCm2G": 40, "valueMS": 7 }] },
+        "steam-subheader-low-pressure": { "steamVelocityMaxByNpsIn": { "saturatedDry": [{ "maxNpsIn": 2, "valueMS": 10 }, { "maxNpsIn": 8, "valueMS": 30 }, { "valueMS": 40 }], "superheated": [{ "maxNpsIn": 2, "valueMS": 15 }, { "maxNpsIn": 8, "valueMS": 40 }, { "valueMS": 60 }] }, "pressureGradientNormalKgCm2Km": 0.4, "pressureGradientMaxKgCm2Km": 1.0, "momentumMaxPa": 15000 },
+        "steam-subheader-medium-pressure": { "steamVelocityMaxByNpsIn": { "saturatedDry": [{ "maxNpsIn": 2, "valueMS": 10 }, { "maxNpsIn": 8, "valueMS": 30 }, { "valueMS": 40 }], "superheated": [{ "maxNpsIn": 2, "valueMS": 15 }, { "maxNpsIn": 8, "valueMS": 40 }, { "valueMS": 60 }] }, "pressureGradientNormalKgCm2Km": 1.0, "pressureGradientMaxKgCm2Km": 2.0, "momentumMaxPa": 15000 },
+        "steam-long-line-low-pressure": { "steamVelocityMaxByNpsIn": { "saturatedDry": [{ "maxNpsIn": 2, "valueMS": 10 }, { "maxNpsIn": 8, "valueMS": 30 }, { "valueMS": 40 }], "superheated": [{ "maxNpsIn": 2, "valueMS": 15 }, { "maxNpsIn": 8, "valueMS": 40 }, { "valueMS": 60 }] }, "pressureGradientNormalKgCm2Km": 0.1, "pressureGradientMaxKgCm2Km": 0.2, "momentumMaxPa": 15000 },
+        "steam-long-line-high-pressure": { "steamVelocityMaxByNpsIn": { "saturatedDry": [{ "maxNpsIn": 2, "valueMS": 10 }, { "maxNpsIn": 8, "valueMS": 30 }, { "valueMS": 40 }], "superheated": [{ "maxNpsIn": 2, "valueMS": 15 }, { "maxNpsIn": 8, "valueMS": 40 }, { "valueMS": 60 }] }, "pressureGradientNormalKgCm2Km": 0.2, "pressureGradientMaxKgCm2Km": 1.0, "momentumMaxPa": 15000 },
+        "mixed-phase": { "velocityMinMS": 10.0, "velocityMaxMS": 23.0, "momentumNormalMaxPa": 10000, "momentumMaxPa": 15000 },
+        "mixed-phase-condensates": { "velocityMinMS": 10.0, "velocityMaxMS": 20.0, "pressureGradientNormalKgCm2Km": 0.2, "pressureGradientMaxKgCm2Km": 0.3, "momentumNormalMaxPa": 10000, "momentumMaxPa": 15000 },
+        "natural-circulation-reboiler-return": { "pressureGradientNormalKgCm2Km": 0.2, "pressureGradientMaxKgCm2Km": 0.4 },
+        "partial-condenser-outlet": { "pressureGradientNormalKgCm2Km": 0.3, "pressureGradientMaxKgCm2Km": 0.6 },
+        "mixed-phase-compressor-delivery": { "pressureGradientNormalKgCm2Km": 0.4, "pressureGradientMaxKgCm2Km": 1.0, "momentumNormalMaxPa": 10000, "momentumMaxPa": 15000 }
+      }
+    },
+    "generic-screening": {
+      "label": "Generic screening",
+      "source": "FlowSure generic review thresholds",
+      "services": {
+        "general-liquid": { "velocityMaxMS": 3.0 },
+        "general-gas": { "velocityMaxMS": 25.0 },
+        "compressor-suction": { "velocityMaxMS": 25.0 },
+        "compressor-discharge-individual": { "velocityMaxMS": 25.0 },
+        "compressor-discharge-header": { "velocityMaxMS": 25.0 },
+        "fuel-gas-header": { "velocityMaxMS": 25.0 },
+        "mixed-phase": { "velocityMaxMS": 3.0 }
+      }
+    },
+    "mott-fgru": {
+      "label": "Mott FGRU gas-line screening basis",
+      "source": "303210-000-CA-001 Rev A; verify against current project criteria",
+      "services": {
+        "general-gas": { "gasVelocityCoefficient": 122.0, "gasVelocityCapMS": 75.0 },
+        "compressor-suction": { "gasVelocityCoefficient": 122.0, "gasVelocityCapMS": 75.0 },
+        "compressor-discharge-individual": { "gasVelocityCoefficient": 122.0, "gasVelocityCapMS": 75.0 },
+        "compressor-discharge-header": { "gasVelocityCoefficient": 122.0, "gasVelocityCapMS": 75.0 },
+        "fuel-gas-header": { "gasVelocityCoefficient": 122.0, "gasVelocityCapMS": 75.0 }
+      }
+    }
+  }
+}

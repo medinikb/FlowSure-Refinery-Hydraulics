@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "liquidVelocityWarningMS": 3,
+  "gasVelocityWarningMS": 25,
+  "machWarning": 0.3,
+  "minimumAbsolutePressurePa": 10000,
+  "transitionReynoldsLow": 2300,
+  "transitionReynoldsHigh": 4000
+}

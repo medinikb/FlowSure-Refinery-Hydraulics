@@ -1,0 +1,149 @@
+/* Visual theme settings, applied to the whole FlowSure workspace. */
+.theme-toggle {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid #d8e2e4;
+  border-radius: 50%;
+  background: #fff;
+  color: #143c68;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.theme-toggle:hover { border-color: #00a887; background: #f2fbf8; }
+
+.theme-dark {
+  --ink: #e8f2f4;
+  --muted: #a9bcc3;
+  --line: #31505a;
+  --cream: #172a31;
+  color: #e8f2f4;
+  background: #102027;
+}
+
+.theme-dark .topbar,
+.theme-dark .card,
+.theme-dark .results-section,
+.theme-dark .project-details-panel,
+.theme-dark .calculation-purpose-panel,
+.theme-dark .flow-model-panel,
+.theme-dark .sizing-panel,
+.theme-dark .batch-panel,
+.theme-dark .info-page article,
+.theme-dark .example-grid article { background: #172a31; }
+
+.theme-dark .topbar { border-color: #31505a; background: #13262d; }
+.theme-dark .brand-mark { background: #087e74; color: #fff; }
+.theme-dark .topbar nav button { color: #b8c9ce; }
+.theme-dark .topbar nav button.active { background: #25464d; color: #f4ffff; }
+.theme-dark .theme-toggle { border-color: #36546a; background: #142d42; color: #ff7d38; }
+.theme-dark .theme-toggle:hover { background: #1b3951; }
+.theme-dark button.secondary,
+.theme-dark .export-actions button,
+.theme-dark .project-actions button { border-color: #42606a; background: #203840; color: #edf7f8; }
+.theme-dark .hero-secondary-action { border-color: #59747a !important; background: #203b43 !important; color: #f1fbfc !important; }
+.theme-dark .hero-secondary-action:hover { background: #2b4d55 !important; }
+.theme-dark .card-title { border-color: #31505a; }
+.theme-dark .card-title > span { background: #19535a; color: #f1ffff; }
+.theme-dark .result-step-heading > span,
+.theme-dark .review-step { background: #19535a; color: #f1ffff; }
+.theme-dark .result-step-heading > b { color: #49d5c0; }
+.theme-dark .field input,
+.theme-dark .field select,
+.theme-dark .segment-head input { border-color: #42606a; background: #102027; color: #edf7f8; }
+.theme-dark .model-picker button,
+.theme-dark .purpose-picker button,
+.theme-dark .source,
+.theme-dark .metric,
+.theme-dark .segment-head { background: #1c333b; }
+.theme-dark .model-picker button,
+.theme-dark .purpose-picker button,
+.theme-dark .segment,
+.theme-dark .table-wrap { border-color: #42606a; }
+.theme-dark .model-picker button.selected,
+.theme-dark .purpose-picker button.selected { border-color: #18b59f; background: #173d40; }
+.theme-dark .segment-control select { border-color: #42606a; background: #102027; color: #edf7f8; }
+.theme-dark .segment-role strong { color: #e3f0f2; }
+.theme-dark .segment-control > span,
+.theme-dark .segment-role > span,
+.theme-dark .segment-head > span { color: #adbec5; }
+.theme-dark th { background: #1d353d; color: #b7cbd1; }
+.theme-dark th,
+.theme-dark td { border-color: #36515b; }
+.theme-dark .class3-disclaimer { background: #153831; border-color: #1e7464; color: #d5efea; }
+.theme-dark .sidebar-reopen,
+.theme-dark .sidebar-toggle { border-color: #42606a; background: #1c333b; color: #dcecef; }
+.theme-dark .notice { border-color: #287969; background: #163d37; color: #d6f5ec; }
+.theme-dark .inline-warning,
+.theme-dark .callout { border-left-color: #e6a53a; background: #49381b; color: #ffe5a8; }
+.theme-dark .calculate-action,
+.theme-dark .pressure-explainer { border-color: #287969; background: #173c39; color: #e0f5ef; }
+.theme-dark .calculate-action h2,
+.theme-dark .pressure-explainer span { color: #f2ffff; }
+.theme-dark .calculate-action.needs-update { border-left-color: #e6a53a; background: #49381b; }
+.theme-dark .calculate-action.needs-update h2 { color: #fff2c8; }
+.theme-dark .calculate-action.needs-update p { color: #f3d99e; }
+.theme-dark .scenario-grid > div { border-color: #42606a; background: #1a333b; }
+.theme-dark .scenario-grid .current { border-color: #19b98e; background: #17443f; }
+.theme-dark .scenario-grid span,
+.theme-dark .scenario-grid small { color: #b8cbd1; }
+.theme-dark .scenario-grid strong { color: #f3ffff; }
+.theme-dark .engineering-review-register { border-color: #42606a; background: #172a31; }
+.theme-dark .engineering-review-head { border-color: #42606a; background: #1c333b; }
+.theme-dark .engineering-review-head h3 { color: #e7f8fb; }
+.theme-dark .review-badge { background: #233d60; color: #bcd5ff; }
+.theme-dark .engineering-review-table th { background: #1d353d; color: #c6d9df; }
+.theme-dark .engineering-review-table td { border-color: #36515b; color: #d6e8ed; }
+
+/* Methodology, reference charts and guided examples. */
+.theme-dark .method-card,
+.theme-dark .steam-methodology,
+.theme-dark .criteria-reference,
+.theme-dark .velocity-reference,
+.theme-dark .pressure-drop-reference,
+.theme-dark .learning-example { border-color: #42606a; background: #172a31; }
+.theme-dark .method-card h3,
+.theme-dark .steam-methodology h2,
+.theme-dark .steam-methodology h3,
+.theme-dark .criteria-reference h2,
+.theme-dark .velocity-reference h2,
+.theme-dark .pressure-drop-reference h2,
+.theme-dark .learning-example h2 { color: #eefbfc; }
+.theme-dark .method-card p,
+.theme-dark .steam-methodology p,
+.theme-dark .criteria-reference > div > p,
+.theme-dark .velocity-reference > p,
+.theme-dark .pressure-drop-reference > p,
+.theme-dark .learning-example > p { color: #c1d4d9; }
+.theme-dark .method-formula { border-color: #365a70; background: #1b3348; }
+.theme-dark .equation { color: #eefbff; }
+.theme-dark .equation-symbols { border-color: #365a70; color: #c5d7e5; }
+.theme-dark .equation-symbols b { color: #e5f2ff; }
+.theme-dark .method-example { border-color: #42606a; background: #1c333b; color: #cce0e3; }
+.theme-dark .method-example > strong { color: #55dfc5; }
+.theme-dark .method-example .example-equation { color: #e8f8fb; font-size: 19px; }
+.theme-dark .method-example .example-equation b { color: #58e0c8; }
+.theme-dark .method-example .example-equation em { background: #16483f; color: #7cf1d9; }
+.theme-dark .nrep-criteria-grid figure,
+.theme-dark .velocity-reference-chart,
+.theme-dark .pressure-drop-chart-grid figure { border-color: #42606a; background: #1c333b; }
+.theme-dark .nrep-criteria-grid figcaption,
+.theme-dark .velocity-reference-chart figcaption,
+.theme-dark .pressure-drop-chart-grid figcaption { border-color: #42606a; color: #d5e8ed; }
+.theme-dark .pressure-drop-chart-actions { border-color: #42606a; background: #1d353d; }
+.theme-dark .pressure-drop-chart-actions button,
+.theme-dark .pressure-drop-chart-actions a { border-color: #52717a; background: #203d44; color: #7ae2d0; }
+.theme-dark .pressure-drop-chart-actions span { color: #c5d8dd; }
+.theme-dark .learning-steps article,
+.theme-dark .learning-result > div { border-color: #42606a; background: #1c333b; }
+.theme-dark .learning-steps strong,
+.theme-dark .learning-result strong { color: #e8f9fc; }
+.theme-dark .learning-steps span,
+.theme-dark .learning-actions small { color: #bdd1d6; }
+.theme-dark .learning-result span { color: #a8c0c6; }
+
+@media (max-width: 760px) {
+  .theme-toggle { width: 38px; height: 38px; font-size: 21px; }
+}

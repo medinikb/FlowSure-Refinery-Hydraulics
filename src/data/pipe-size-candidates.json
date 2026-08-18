@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "basis": "Illustrative Schedule 40 internal diameters for hydraulic screening. Confirm selected NPS, schedule, corrosion allowance and actual purchased pipe dimensions before design use.",
+  "sizes": [
+    { "npsIn": 1, "insideDiameterMm": 26.64 },
+    { "npsIn": 1.5, "insideDiameterMm": 40.89 },
+    { "npsIn": 2, "insideDiameterMm": 52.5 },
+    { "npsIn": 3, "insideDiameterMm": 77.93 },
+    { "npsIn": 4, "insideDiameterMm": 102.26 },
+    { "npsIn": 6, "insideDiameterMm": 154.08 },
+    { "npsIn": 8, "insideDiameterMm": 202.72 },
+    { "npsIn": 10, "insideDiameterMm": 254.46 },
+    { "npsIn": 12, "insideDiameterMm": 303.23 },
+    { "npsIn": 14, "insideDiameterMm": 333.34 },
+    { "npsIn": 16, "insideDiameterMm": 381 },
+    { "npsIn": 18, "insideDiameterMm": 428.65 },
+    { "npsIn": 20, "insideDiameterMm": 477.82 },
+    { "npsIn": 24, "insideDiameterMm": 575.04 },
+    { "npsIn": 30, "insideDiameterMm": 730.24 },
+    { "npsIn": 36, "insideDiameterMm": 876.3 },
+    { "npsIn": 42, "insideDiameterMm": 1022.34 },
+    { "npsIn": 48, "insideDiameterMm": 1168.4 }
+  ]
+}

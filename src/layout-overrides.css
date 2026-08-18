@@ -1,0 +1,6 @@
+/* Final responsive layout rules: loaded after shared legacy styles. */
+@media (min-width: 1051px) {
+  .flow-model-panel .model-picker {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
