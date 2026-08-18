@@ -1,0 +1,29 @@
+{
+  "name": "refinery-pressure-drop-calculator",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "test": "vitest run",
+    "typecheck": "tsc -b --pretty false",
+    "check:privacy": "node scripts/check-private-files.mjs"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "iapws-if97": "2.2.0",
+    "jspdf": "^3.0.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.2",
+    "vitest": "^3.2.4"
+  }
+}
