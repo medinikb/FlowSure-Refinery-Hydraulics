@@ -1,5 +1,7 @@
 # FlowSure — Public Refinery Pressure-Drop Calculator
 
+Live link: https://medinikb.github.io/FlowSure-Refinery-Hydraulics/
+
 FlowSure is a local-first browser calculator for transparent hydraulic screening of ordered refinery pipe segments. It supports single-phase liquid, steady isothermal gas/vapour, and steady gas–liquid Beggs–Brill calculations.
 
 > **Engineering status:** screening and verification only. It is not final design certification and does not replace a qualified engineer, approved company procedure, vendor data, or validated commercial simulation.
