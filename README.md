@@ -1,4 +1,4 @@
-# FlowSure — Public Refinery Pressure-Drop Calculator
+# FlowSure — Refinery Pressure-Drop Calculator
 
 Live link: https://medinikb.github.io/FlowSure-Refinery-Hydraulics/
 
